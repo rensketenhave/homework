@@ -1,0 +1,60 @@
+let weather = {
+  paris: {
+    temp: 19.7,
+    humidity: 80,
+  },
+  tokyo: {
+    temp: 17.3,
+    humidity: 50,
+  },
+  lisbon: {
+    temp: 30.2,
+    humidity: 20,
+  },
+  "san francisco": {
+    temp: 20.9,
+    humidity: 100,
+  },
+  moscow: {
+    temp: -5,
+    humidity: 20,
+  },
+};
+
+// the console
+let city = prompt("What city?");
+{
+  if (city === "paris") {
+    alert(
+      `It is currently ${weather.paris.temp} degrees in Paris, with a humidity of 80%`
+    );
+  }
+  if (city === "tokyo") {
+    alert(
+      `It is currently ${weather.tokyo.temp} degrees in Tokyo, with a humidity of 50%`
+    );
+  }
+  if (city === "lisbon") {
+    alert(
+      `It is currently ${weather.tokyo.temp} degrees in Lisbon, with a humidity of 20%`
+    );
+  }
+  if (city === "san francisco") {
+    alert(`It is currently 20.9 degrees in San francisco, with 100% humidity`);
+  }
+  if (city === "moscow") {
+    alert(
+      `It is currently ${weather.moscow.temp} degrees in Moscow, with a humidity of 20%`
+    );
+  } else {
+    alert(
+      `Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney`
+    );
+  }
+}
+console.log(city);
+
+number = Math.round(weather.paris);
+number = Math.round(weather.tokyo);
+number = Math.round(weather.lisbon);
+number = Math.round(weather.moscow);
